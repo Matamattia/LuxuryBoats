@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+h1,h2,p,div,span{
+	font-family: 'Quicksand', sans-serif;
+}
+
+
+body{
+	padding: 0px;
+	margin: 0;
+}
+
+.copertina{
+	height: 890px;
+	padding-top: 110px;
+	text-align: center;
+	background-image: url("img/cop_1.jpg");
+  background-size: cover;
+  background-position: center;
+  
+}
+.immagini{
+	
+	padding-top: 40px;
+  display: flex;
+  
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-left: 40px;
+  max-width: 700px;
+  margin-top: 120px;
+  padding-bottom: 5%;
+
+}
+
+.immagini  > a > img{
+	width: 500px;
+	height: 400px;
+	border-radius: 10px;
+	box-shadow:2px 8px 50px -15px #20B2AA;
+}
+
+
+.destinazione {
+	display: flex;
+  gap: 0.5em;
+	flex-wrap: wrap;
+	align-items: center;/*allinea asse x*/
+	justify-content: center;/*allinea asse y*/
+}
+
+
+.destcol img {
+  height: 350px;
+	width: 450px;
+
+	
+}
+.destcol{
+	display: flex;
+	flex-direction: column;
+	
+}
+
+
+.more{
+	font-weight: 700;
+	font-size: 15px;
+	width: 40%
+	cursor: pointer;
+}
+
+.more:hover{
+	color: #fac031;
+}
+#descrizione1,#descrizione2,#descrizione3{
+	width: 450px;
+	overflow: hidden;
+	word-wrap: break-word;/*fa andare il testo a capo*/
+	
+}
+.meno{
+	font-weight: 700;
+	font-size: 15px;
+	width: 40%;
+	cursor: pointer;
+}
+
+button{
+	border: 0px;
+}	
+
+.tipologia{
+	margin-top: 1%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
+	align-items: center;/*allinea asse x*/
+	justify-content: center;/*allinea asse y*/
+	margin-left: 20%;
+	margin-right: 20%;
+}
+.titolo{
+	margin-top: 5%;
+	text-align: center;
+}
+
+
+.tipologia > a > img {
+	height: 250px;
+	width: 300px;
+
+}
+hr{
+
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+
+
+.recensione{
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5em;
+	align-items: center;/*allinea asse x*/
+	justify-content: center;/*allinea asse y*/
+
+}
+
+ .recensione > *{/*definisco la griglia per le recensioni*/
+	
+	border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 5px;
+  box-shadow:2px 8px 30px -15px rgba(0, 0, 0, 0.5);/*orizzontale verticale blur(intensità) spazio*/
+
+}
+.stars {
+  grid-row: 1;
+  grid-column: 2;
+        
+}
+
+.stars > img{
+	width: 70px;
+	height: 15px;
+}
+
+	
+.name {
+  grid-row: 1;
+  grid-column: 1;
+    
+    
+}
+
+.text {
+  grid-row: 2;
+    grid-column: 1 / span 2;
+    
+}
+
+
+

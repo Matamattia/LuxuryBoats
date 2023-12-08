@@ -1,0 +1,90 @@
+/* Stili per il layout generale */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+h1,h2,p,div,span{
+  font-family: 'Quicksand', sans-serif;
+}
+body {
+  margin: 0 3%;
+  line-height: 3rem;
+  font-weight: bolder;
+}
+
+main {
+  padding: 20px;
+}
+
+/*Grafica per immagine*/
+.container-img {
+  display: flex;
+  width: 100%;
+  padding:4% 2%;
+  height: 65vh;
+  box-sizing: border-box;/*prende pure il bordo quando dice 100%*/
+  
+  background-image: url("img/copertina_s.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  transition: .5s;
+  object-fit: cover;
+}
+
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+ 
+
+
+h1, h2, p {
+  margin: 2rem 0;
+}
+.container {
+  max-width: 960px;
+
+}
+
+
+.prenota-bottone {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/*form recensione*/
+input[type=text]:focus {
+  border: 4px solid #555;
+    background-color: #f8f8f8;
+}
+
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+

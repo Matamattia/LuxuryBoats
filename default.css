@@ -1,0 +1,140 @@
+header{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  }
+
+  .header-transparent {
+  background-color: transparent;
+  
+}
+
+.header-white {
+  background-color: white;
+  
+}
+.color-white{
+  color: white;
+}
+.color-black{
+  color: black;
+}
+
+header nav ul{
+  list-style: none;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  /*color: #000;*/
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+header nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #fac031;
+  display: block;
+  transition: 0.2s linear;
+}
+header nav ul li a:hover::after{
+  width: 100%;
+}
+header nav ul li a:hover{
+  color: #fac031;
+}
+.logo{
+  width: 50px;
+  height: 35px;
+}
+footer {
+  background-color: rgba(54,58,63,255);
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;/*se sono più elementi va a capo*/
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin: 0;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  padding: 0;
+}
+
+.social-icons li {
+  margin-right: 10px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons li a {
+  color: #333;
+  text-decoration: none;
+}
+.social-icons li a i img{
+  width: 50px;
+  height: 50px;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: white;
+  margin: 0;
+}

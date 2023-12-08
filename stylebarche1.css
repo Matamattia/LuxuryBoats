@@ -1,0 +1,266 @@
+
+.color-white{
+  color: #054a52;
+}
+.color-black{
+  color: black;
+}
+header nav ul{
+  list-style: none;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color: #054a52;
+  font-weight: 500;
+  font-size: 17px;
+}
+header nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #fac031;
+  display: block;
+  transition: 0.2s linear;
+}
+header nav ul li a:hover::after{
+  width: 100%;
+}
+header nav ul li a:hover{
+  color: #fac031;
+}
+.logo{
+  width: 50px;
+  height: 35px;
+}
+footer {
+  background-color: rgba(54,58,63,255);
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;/*se sono più elementi va a capo*/
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin: 0;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  padding: 0;
+}
+
+.social-icons li {
+  margin-right: 10px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons li a {
+  color: #333;
+  text-decoration: none;
+}
+.social-icons li a i img{
+  width: 50px;
+  height: 50px;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  /*color: #666;*/
+  color: white;
+  margin: 0;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+h1 {
+   color: #054a52;
+  text-align: center;
+  margin-top: 70px;
+}
+
+h2{
+  margin-left: 20px;
+}
+
+h1,h2,p,div,span{
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+ form{
+
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#dispo{
+  display: none;
+}
+.boat-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap:0.5em;
+  margin-left: 10px;
+}
+
+.element {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  width: 49%;
+  border-radius: 5px 5px 5px 5px;
+  overflow:hidden;
+  box-shadow:2px 8px 50px -15px #054a52;
+  cursor: pointer;
+  margin-bottom: 5px;
+
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+div img {
+  width: 500px;
+  height: 400px;
+}
+.cont{
+  display: flex;
+  flex-wrap: wrap;
+}
+.new-boat-form{
+  display: none;
+}
+
+input[type="submit"] {
+  width: 25%;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom:10px;
+  margin-top: 10px;
+  background-color: #054a52;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+input[type="text"] {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#descrizioneBarca{
+  height: 200px;
+
+}
+
+#addBoatButton{
+  width: 50%;
+  position: relative;
+
+}
+
+
+button{
+  width: 10%;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom:10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #054a52;
+
+  color: #fff;
+  cursor: pointer;
+}
+
+
+label {
+  display: block;
+ margin-bottom: 5px;
+}
+
+span{
+  margin-left: 60%;
+}
+
+button:hover {
+ background-color: #054a52;
+
+}
+
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+.removeBoat{
+  width: 65px;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noleggio Catamarano - Lagoon 46</title>
+  <link rel="stylesheet" href="style.css">
+
+   <style>
+.grid { 
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  align-items: start;
+  justify-items: center;
+  }
+.grid img {
+  border: 1px solid rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+  max-width: 100%;
+}
+.grid img:nth-child(2) {
+  grid-column: span 3;
+  grid-row: span 2;
+  }
+</style>
+
+</head>
+
+
+<body>
+  <!-- Header del sito -->
+  <header>
+    
+    <nav>
+      <ul>
+        <li><a href="#"> <- </a></li>
+        <li><a href="#">Catamarani</a></li>
+        <li><a href="#">Noleggio</a></li>
+        <li><a href="#">Contatti</a></li>
+        <li><li> NOME BARCA CHE STIAMO VEDENDO</li>
+      </ul>
+    </nav> 
+
+    
+  </header>
+
+
+    <!-- Mi collego al DB --> 
+  <?php 
+      $host = 'localhost';
+      $port = '5432';
+      $db = 'PROGETTO_TSW';
+      $username = 'postgres';
+      $password = 'admin';
+      $connection_string = "host=$host dbname=$db user=$username password=$password"; 
+    ?>
+    <?php 
+      $db = pg_connect($connection_string)or die('Impossibile connetersi al database:'.pg_last_error());
+
+      echo "SONO QUI " ; 
+      echo $db ; 
+
+    ?>
+
+
+  <!-- Contenuto principale -->
+
+
+
+
+
+
+
+
+  <main>
+<main class="grid">
+  <img src="img/immagine_barca_1.jpeg" alt="Sample photo">
+  <img src="img/immagine_barca_2.jpeg" alt="Sample photo">
+  <img src="img/immagine_barca_3.jpeg" alt="Sample photo">
+   <img src="img/immagine_barca_1.jpeg" alt="Sample photo">
+  <img src="img/immagine_barca_2.jpeg" alt="Sample photo">
+  <img src="img/immagine_barca_3.jpeg" alt="Sample photo">
+   <img src="img/immagine_barca_1.jpeg" alt="Sample photo">
+  <img src="img/immagine_barca_2.jpeg" alt="Sample photo">
+  <img src="img/immagine_barca_3.jpeg" alt="Sample photo">
+
+</main>
+
+<hr>
+<div class="#">
+
+
+<div class="grid-container">
+  <div class="item3"  style="  border-right:  1px solid #000;">
+
+    <h2> Descrizione</h2>
+    La Lagoon 46 è un catamarano spazioso e confortevole con un design moderno. È dotato di ampi spazi interni, cabine confortevoli e un'ampia area lounge sul ponte. Perfetto per crociere in famiglia o con un gruppo di amici.
+  </div>  
+  <div class="item4"  style="  border-right:  1px solid #000; text-align: left;" >
+    <h2> Informazioni: </h2>
+    <ul>
+  <li>Anno di costruzione : 2021</li>
+  <li>Lunghezza: 13.99m </li>
+  <li>Pescaggio: 1.35m</li>
+  <li> Posti letto:12 </li>
+</ul></div>
+  <div class="item5">
+    <h2> Prezzo </h2>
+    Questa Barca ha un costo %% al giorno.
+
+</div>
+
+  
+
+  </div>
+      <a style="box-align: centers;" href="#" class="prenota-bottone">Prenota ora</a>
+<hr>
+</div> 
+
+  <!-- Footer del sito -->
+  <div>
+  <footer>
+    <p>&copy; 2023 Noleggio da Carmine. Tutti i diritti riservati.</p>
+  </footer>
+</div>
+</body>
+</html>

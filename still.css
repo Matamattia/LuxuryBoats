@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+h1,h2,p,div,span{
+  font-family: 'Quicksand', sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;/*se voglio dare l' effetto che si vede quello sotto togliere*/
+  left: 0;
+  right: 0;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  }
+
+  .header-transparent {
+  background-color: transparent;
+
+}
+
+.header-white {
+  background-color: white;
+
+}
+.color-white{
+  color: #054a52;
+}
+.color-black{
+  color: black;
+}
+header nav ul{
+  list-style: none;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color: #054a52;
+  font-weight: 500;
+  font-size: 17px;
+}
+header nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #fac031;
+  display: block;
+  transition: 0.2s linear;
+}
+header nav ul li a:hover::after{
+  width: 100%;
+}
+header nav ul li a:hover{
+  color: #fac031;
+}
+.logo{
+  width: 50px;
+  height: 35px;
+}
+
+
+.Scelte span{
+  display:block;
+  margin: 10%;
+}
+
+
+
+.error {
+  color: #008080;
+  background-color: #e6f4f3;
+  width: 100%;
+  max-height: 5%;
+  border: 1px solid #008080;
+  border-radius: 4px;
+}
+
+
+
+.descr{
+  width:20%;
+}
+
+.Cerca {
+  margin-top: 10px;
+  background-color: #008080;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.skip{
+  background-color: #008080;
+  box-sizing: border-box;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  cursor: pointer;
+  border-radius: 5px 5px 5px 5px;
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  font-weight: bold;
+  color: white;
+  display: none;
+}
+
+.MegaContainer{
+  padding-top: 45px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction:row;
+
+}
+
+
+.imgs{
+  box-sizing: border-box;
+  display:flex;
+  flex-wrap: wrap;
+  /*provo a farlo grid*/
+  margin-left: 5px;
+  flex:8;
+}
+
+
+.single{
+  box-sizing:border-box;
+  position: relative;/*Per poter posizionare il div skip*/
+  border-radius: 5px 5px 5px 5px;
+  overflow:hidden;
+  box-shadow:2px 8px 50px -15px #008080;
+  cursor: pointer;
+}
+
+
+@media (width >= 1500px){
+.single{
+  max-width: 30%;
+  margin: 20px;
+
+}
+}
+
+
+.single:hover{
+    background-color: #008080;
+    transition: background-color 0.3s ease;
+
+}
+
+@media (width<1500px ) {
+  .single {
+    max-width: 47%;
+    margin: 10px;
+  }
+  .single>img{
+    width:600px; /*Dimensione massima immagine*/
+    height: 350px;
+    background-size: cover;
+
+  }
+}
+
+
+
+
+@media (width< 950px) {
+  .single {
+    max-width: 100%;
+    margin: 20px;
+  }
+}
+
+.Valut{
+  display:flex;
+  flex-direction:row;
+}
+
+.Scelte{
+  box-sizing: border-box;  /*Colonna Sinistra*/
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #054a52;
+  border-radius: 5px 5px 5px 5px;
+  color: #FFFFFF;
+  padding: 10px ;
+  box-shadow:15px 15px 30px -15px #008080;
+  flex:1;
+  font-size: 15px;
+  margin-top: 1%;
+}
+
+
+
+.Menu{
+  background-color: #008080;
+  width:100%;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.single>img{
+  width:500px; /*Dimensione massima immagine*/
+  height: 350px;
+  background-size: cover; /*Adatta l'immagine al div*/
+}
+
+.single>span{
+  box-sizing: border-box;
+  width:380px;
+  max-height: 50%;
+  display: block;
+  padding-left: 10px;
+  font-size: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+
+
+.img2{
+  display: none;
+
+}
+
+.img3{
+  display: none;
+}
+
+
+.separatore{
+  background-color: #87CEFA;
+  height: 1px;
+  width: 20%;
+  border: none;
+  box-shadow: 0 2px 5px #4682B4;
+}
+
+.checkbox input{
+  width: 20px;
+  height: 20px;
+  background-color: #87CEFA;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+
+.checkbox input:hover{
+  box-shadow: 0 2px 5px #00008B;
+}
+
+.testo{
+   border-radius: 5px 5px 5px 5px;
+   height: 30px;
+}
+
+.ProssimaPagina{
+  text-align: center;
+  font-size: 20px;
+  left: 50%;
+  right: 50%;
+
+}
+.numbers{
+  display: inline-block;
+  background-color: #008080;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bolder;
+
+}
+.numbers a{
+  text-decoration: none;
+  color: white;
+}
+
+
+footer {
+  margin-top: 5%;
+  background-color: rgba(54,58,63,255);
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;/*se sono più elementi va a capo*/
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin: 0;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  padding: 0;
+}
+
+.social-icons li {
+  margin-right: 10px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons li a {
+  color: #333;
+  text-decoration: none;
+}
+.social-icons li a i img{
+  width: 50px;
+  height: 50px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: white;
+  margin: 0;
+}

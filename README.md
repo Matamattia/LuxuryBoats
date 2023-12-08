@@ -52,7 +52,5 @@ Welcome to our Boat Rental Website! Whether you're a boat owner looking to share
 3. **Availability Confirmation:**
    - The owner will confirm the boat's availability through the "My Boats" section.
 
-## Project Requirements
-
 
 Thank you for your interest in our project! We hope the site provides an unforgettable experience for users looking to explore the beauty of the Amalfi Coast aboard charming boats.

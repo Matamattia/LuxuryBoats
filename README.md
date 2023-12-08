@@ -2,9 +2,9 @@
 
 Welcome to our Boat Rental Website! Whether you're a boat owner looking to share your vessel or an adventurer seeking the perfect maritime experience, you've come to the right place. Below, you'll find a brief guide to navigate through our website seamlessly.
 
-1. [ Introduction](# Introduction)
+1. [ Introduction](#Introduction)
 2. [Key Features](#Key-Features)
-3. [Site Pages](Site Pages)
+3. [Site Pages](#Site-Pages)
 4. [Booking Process](#Booking-Process)
 # Introduction
 
